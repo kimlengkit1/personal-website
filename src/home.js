@@ -2,12 +2,18 @@
 
 function applyTheme(theme) {
     const html = document.documentElement;
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
     if (theme === 'dark') {
         html.classList.add('dark');
         html.classList.remove('light');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
       } else {
         html.classList.add('light');
         html.classList.remove('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
       }
 }
 
