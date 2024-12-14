@@ -8,10 +8,10 @@
         <script src="./home.js" defer></script>
         <title>Home</title>
     </head>
-    <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <body class="bg-stone-50 dark:bg-stone-900 text-gray-800 dark:text-gray-200">
 
         <!--Toggle Light Mode and Dark Mode-->
-        <div class="flex justify-end items-start p-2">
+        <div class="flex justify-end items-start p-2 animate-slideDown">
             <span class="flex items-center space-x-2">
                 <span id="theme-icon" class="text-gray-800 dark:text-gray-200 transition-colors">
                     <!-- (Light Mode) -->
@@ -32,33 +32,46 @@
         </div>
 
         <!-- NavBar -->
-        <nav class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+        <nav class="bg-stone-50 dark:bg-stone-900 text-gray-800 dark:text-gray-200 animate-slideDown">
             <div class="container mx-auto flex justify-between items-center p-4">
                 <!-- Left Side: Logo/Name -->
                 <div class="flex items-center">
                     <a href="./index.html" class="text-lg font-semibold hover:text-gray-300 dark:hover:text-gray-400">
-                        Kimleng Kit
+                        KK
                     </a>
                 </div>
     
                 <!-- Right Side: Navigation Links -->
                 <div class="flex items-center space-x-4">
-                    <ul class="flex items-center space-x-8">
+                    <!-- <ul class="flex items-center space-x-8">
                         <li><a href="#" class="hover:text-gray-300 dark:hover:text-gray-400">About</a></li>
                         <li><a href="#" class="hover:text-gray-300 dark:hover:text-gray-400">Contact</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </nav>
 
         <!-- Main Content -->
+        <section class="relative bg-stone-50 py-16 dark:bg-stone-900 text-gray-800 dark:text-gray-20">
+            <div class="flex flex-col md:flex-row items-center max-w-4xl mx-auto space-y-8 md:space-y-0 md:space-x-8 px-6">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4 dark:text-gray-200 animate-slideRight">Hello, I'm Kimleng!</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-200 animate-slideRight">
+                        I'm a third year computer science student at the University of Massachusetts Amherst.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img class="rounded-lg shadow-lg w-full object-cover animate-slideLeft" src="./images/cropped_slightly.jpg" alt="A picture of Kimleng smiling.">
+                </div>
+            </div>
+        </section>
 
         <!-- Contact Section -->
-        <section class="bg-gray-100 py-16 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+        <section class="bg-stone-50 py-16 dark:bg-stone-900 text-gray-800 dark:text-gray-200 animate-slideUp">
             <div class="container mx-auto px-6">
               <div class="text-center max-w-2xl mx-auto">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">Get in Touch</h2>
-                <p class="text-lg text-gray-600 mb-8 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 dark:text-gray-200">Get in Touch</h2>
+                <p class="text-lg text-gray-600 mb-8 dark:text-gray-200">
                   Let's connect on linkedin or explore my projects.
                 </p>
               </div>
