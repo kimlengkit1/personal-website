@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../dist/output.css">
+        <script src="./home.js" defer></script>
+        <title>Home</title>
+    </head>
+    <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+        <!--Toggle Light Mode and Dark Mode-->
+        <div class="flex justify-end items-start p-2">
+            <span class="flex items-center space-x-2">
+                <span id="theme-icon" class="text-gray-800 dark:text-gray-200 transition-colors">
+                    <!-- (Light Mode) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" id="sun-icon" class="h-6 w-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5" />
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <!-- (Dark Mode) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21.752 15.002A9 9 0 0 1 12 3a9.09 9.09 0 0 0-2.127.246 7.5 7.5 0 1 0 11.879 11.756z" />
+                    </svg>
+                </span>
+                <!-- Toggle Theme Button -->
+                <button id="toggle-theme" class="relative inline-flex items-center w-12 h-6 rounded-full bg-gray-300 dark:bg-gray-600 focus:outline-none">
+                    <span class="absolute left-1 bg-white w-4 h-4 rounded-full transform transition-transform dark:translate-x-6"></span>
+                </button>
+            </span>
+        </div>
+
+        <!-- NavBar -->
+        <nav class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <!-- Left Side: Logo/Name -->
+                <div class="flex items-center">
+                    <a href="./index.html" class="text-lg font-semibold hover:text-gray-300 dark:hover:text-gray-400">
+                        Kimleng Kit
+                    </a>
+                </div>
+    
+                <!-- Right Side: Navigation Links -->
+                <div class="flex items-center space-x-4">
+                    <ul class="flex items-center space-x-8">
+                        <li><a href="#" class="hover:text-gray-300 dark:hover:text-gray-400">About</a></li>
+                        <li><a href="#" class="hover:text-gray-300 dark:hover:text-gray-400">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+
+        <!-- Contact Section -->
+        <section class="bg-gray-100 py-16 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+            <div class="container mx-auto px-6">
+              <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">Get in Touch</h2>
+                <p class="text-lg text-gray-600 mb-8 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
+                  Let's connect on linkedin or explore my projects.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-6">
+                <!-- GitHub Icon -->
+                <a href="https://github.com/kimlengkit1" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-500 transition">
+                  <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.112.793-.262.793-.583v-2.287c-3.338.725-4.033-1.617-4.033-1.617-.546-1.386-1.334-1.756-1.334-1.756-1.089-.745.083-.729.083-.729 1.204.084 1.837 1.236 1.837 1.236 1.07 1.834 2.809 1.304 3.494.997.108-.774.42-1.304.762-1.604-2.665-.308-5.466-1.333-5.466-5.933 0-1.31.468-2.382 1.236-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.53 11.53 0 013.003-.403c1.02.005 2.047.137 3.003.403 2.292-1.552 3.3-1.23 3.3-1.23.653 1.653.24 2.873.118 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.805 5.62-5.476 5.922.431.372.815 1.103.815 2.222v3.293c0 .321.192.698.8.581C20.565 21.798 24 17.297 24 12c0-6.63-5.373-12-12-12z" />
+                  </svg>
+                </a>
+                <!-- LinkedIn Icon -->
+                <a href="https://linkedin.com/in/kimleng-kit-a175941b8" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-100 hover:text-blue-600 transition">
+                  <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.451 20.452H16.91v-5.672c0-1.35-.024-3.084-1.879-3.084-1.882 0-2.172 1.468-2.172 2.986v5.77h-3.54V8.998h3.4v1.56h.05c.474-.9 1.63-1.845 3.357-1.845 3.592 0 4.256 2.364 4.256 5.444v6.295zM5.337 7.433c-1.14 0-2.062-.924-2.062-2.062 0-1.14.922-2.062 2.062-2.062 1.141 0 2.063.922 2.063 2.062s-.922 2.062-2.063 2.062zM6.938 20.452H3.737V8.998h3.2v11.454zM22.225 0H1.775C.798 0 0 .798 0 1.775v20.45C0 23.202.798 24 1.775 24h20.45c.976 0 1.775-.798 1.775-1.775V1.775C24 .798 23.202 0 22.225 0z" />
+                  </svg>
+                </a>
+                <!-- Instagram Icon -->
+                <a href="https://instagram.com/kimlengkit" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-100 hover:text-pink-500 transition">
+                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg>
+                </a>
+                <!-- Email Icon -->
+                <a href="mailto:kimlengkit.com@gmail.com" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-500 transition">
+                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                </a>
+                
+              </div>
+            </div>
+          </section>
+    </body>
+</html>
