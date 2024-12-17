@@ -11,8 +11,6 @@ module.exports = {
         slideUp: 'slideUp 1s ease-out',
         'fade-in': 'fade-in 2s ease-out',
         'slide-up': 'slide-up 1.5s ease-out',
-        typewriter: 'typewriter 3s steps(18) forwards',
-        cursor: 'cursor 0.8s step-end infinite',
       },
       keyframes: {
         'fade-in': {
@@ -38,14 +36,6 @@ module.exports = {
         slideUp: {
           '0%': { transform: 'translateY(100%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        typewriter: {
-          '0%': { width: '0ch' },
-          '100%': { width: '18ch' },
-        },
-        cursor: {
-          '0%, 100%': { borderColor: 'transparent' },
-          '50%': { borderColor: 'white' },
         },
       },
     },
