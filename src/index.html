@@ -58,7 +58,12 @@
                 <div class="md:w-1/2">
                     <h2 class="text-4xl font-bold text-gray-800 mb-4 dark:text-gray-200 animate-slideRight">Hello, I'm Kimleng!</h2>
                     <p class="text-lg text-gray-600 dark:text-gray-200 animate-slideRight">
-                        I'm a third year computer science student at the University of Massachusetts Amherst.
+                        I'm a third year 
+                        <span class="font-bold text-2xl">
+                            <!-- do stuffs to it later -->
+                            computer science
+                        </span> 
+                        student at the University of Massachusetts Amherst.
                     </p>
                 </div>
                 <div class="md:w-1/2">
@@ -76,7 +81,7 @@
                         Here are some of the projects I've worked on.
                     </p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     <!-- Project Card -->
                     <a href="https://github.com/kimlengkit1/expenser" target="_blank">
                         <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-slideUp transition-transform duration-300 transform hover:scale-105">
@@ -84,7 +89,7 @@
                             <div class="p-4">
                                 <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Expenser</h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    An expense splitter app that allows users to split expenses with friends and keep track of who owes who.
+                                    An expense splitter app that allows users to split expenses with friends and keep track of who owes who. It parses the receipt into a readable list of items for the users. Items on the list can then be assigned to the users to split the cost.
                                 </p>
                             </div>
                         </div>
@@ -96,7 +101,7 @@
                             <div class="p-4">
                                 <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Event TBD</h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    A school project website that allow users to search for events within their community and RSVP.
+                                    A school project website that allow users to search for events within their community and RSVP. Users can update their profiles and share their interests and hobbies with others. They can also leave reviews on events they have attended.
                                 </p>
                             </div>
                         </div>
@@ -106,8 +111,39 @@
         </section>
 
         <!-- Resume Section -->
-        <section>
-
+        <section class="relative bg-stone-50 py-16 dark:bg-stone-900 text-gray-800 dark:text-gray-20">
+            <div class="flex flex-col items-center space-y-4">
+                <!-- Text -->
+                <p class="text-2xl font-bold">Looking for my resume?</p>
+            
+                <!-- Animated Arrow -->
+                <div class="flex flex-col items-center">
+                  <!-- Arrow Icon with Bounce Animation -->
+                  <svg
+                    class="w-10 h-10 text-stone-400 animate-bounce"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+            
+                <!-- Resume Button -->
+                <a
+                  href="./public/Kimleng_Kit_Resume.pdf"
+                  target="_blank"
+                  class="bg-stone-900 text-white px-6 py-2 rounded-full font-bold text-lg shadow-lg hover:bg-stone-600 transition-all duration-300"
+                >
+                  Here it is!
+                </a>
+              </div>
         </section>
 
         <!-- Contact Section -->
